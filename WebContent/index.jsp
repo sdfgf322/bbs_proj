@@ -8,7 +8,7 @@
 <title>Crown - premium responsive admin template for backend systems</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/sjs/jquery.min.js"></script>
 
 <script type="text/javascript" src="js/plugins/spinner/ui.spinner.js"></script>
 <script type="text/javascript" src="js/plugins/spinner/jquery.mousewheel.js"></script>

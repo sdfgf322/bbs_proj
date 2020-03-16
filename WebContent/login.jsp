@@ -5,10 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-<title>Crown - premium responsive admin template for backend systems</title>
+<title>登录</title>
 <link href="${pageContext.request.contextPath}/static/css/main.css" rel="stylesheet" type="text/css" />
 
-<script   src="${pageContext.request.contextPath}/static/js/jquery.min.${pageContext.request.contextPath}/static/js"></script>
+<script src="${pageContext.request.contextPath}/static/js/jquery.min.${pageContext.request.contextPath}/static/js"></script>
 
 <script   src="${pageContext.request.contextPath}/static/js/plugins/spinner/ui.spinner.${pageContext.request.contextPath}/static/js"></script>
 <script   src="${pageContext.request.contextPath}/static/js/plugins/spinner/jquery.mousewheel.${pageContext.request.contextPath}/static/js"></script>
@@ -82,25 +82,26 @@
     <div class="loginLogo"><img src="${pageContext.request.contextPath}/static/images/loginLogo.png" alt="" /></div>
     <div class="widget">
         <div class="title"><img src="${pageContext.request.contextPath}/static/images/icons/dark/files.png" alt="" class="titleIcon" /><h6>Login panel</h6></div>
-        <form action="index.html" id="validate" class="form">
+        <form action="login_Ctrl" id="validate" class="form">
             <fieldset>
                 <div class="formRow">
-                    <label for="login">Username:</label>
-                    <div class="loginInput"><input type="text" name="login" class="validate[required]" id="login" /></div>
+                    <label for="login">账户:</label>
+                    <div class="loginInput"><input type="text" name="userId" class="validate[required]" id="login" /></div>
                     <div class="clear"></div>
                 </div>
                 
                 <div class="formRow">
-                    <label for="pass">Password:</label>
-                    <div class="loginInput"><input type="password" name="password" class="validate[required]" id="pass" /></div>
+                    <label for="pass">密码:</label>
+                    <div class="loginInput"><input type="password" name="userPsw" class="validate[required]" id="pass" /></div>
                     <div class="clear"></div>
                 </div>
                 
                 <div class="loginControl">
-             
-                    <input type="submit" value="Log me in" class="dredB logMeIn" />
+                    <a href="${pageContext.request.contextPath}/register.jsp"><input type="button" value="注册" class="dredB logMeIn" style="margin-left:20px;"/></a>
+                    <input type="submit" value="登录" class="dredB logMeIn" />
+                      <a href="#">找回密码</a>
                     <div class="clear"></div>
-                    <div><a href>找回密码</a></div>
+               
                   
                 </div>
             </fieldset>
